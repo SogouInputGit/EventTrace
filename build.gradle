@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly rootProject.ext.AndroidAnnotations
+    compileOnly project(path: ':lib_foreign_base')
+    compileOnly rootProject.ext.input_debug_common
+    compileOnly project(path: ':lib_event_trace')
+    compileOnly project(path: ':lib_foreign_setting')
+    compileOnly rootProject.ext.Gson
+    compileOnly rootProject.ext.lib_base_common
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation rootProject.ext.lib_base_common
+    androidTestImplementation rootProject.ext.Gson
+    androidTestImplementation project(path: ':lib_foreign_base')
+    androidTestImplementation rootProject.ext.input_debug_common
+    androidTestImplementation project(path: ':lib_event_trace')
+    androidTestImplementation project(path: ':lib_foreign_setting')
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

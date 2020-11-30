@@ -1,9 +1,10 @@
 package com.sohu.inputmethod.foreign.base.deadlock;
 
-import android.support.annotation.GuardedBy;
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.util.Log;
+
+import androidx.annotation.GuardedBy;
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

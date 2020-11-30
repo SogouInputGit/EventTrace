@@ -1,5 +1,6 @@
 package com.sohu.inputmethod.foreign.base.deadlock;
 
+
 import com.sohu.inputmethod.foreign.base.BuildConfig;
 
 import java.util.concurrent.locks.ReentrantLock;

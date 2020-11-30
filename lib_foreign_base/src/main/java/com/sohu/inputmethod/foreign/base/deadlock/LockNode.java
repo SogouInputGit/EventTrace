@@ -1,6 +1,6 @@
 package com.sohu.inputmethod.foreign.base.deadlock;
 
-import android.support.v4.util.ArraySet;
+import androidx.collection.ArraySet;
 
 import java.util.HashSet;
 import java.util.Set;

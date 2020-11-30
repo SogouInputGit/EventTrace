@@ -1,6 +1,7 @@
 package com.sogou.event;
 
-import android.support.v4.util.ArraySet;
+
+import androidx.collection.ArraySet;
 
 import com.sogou.event.internal.Preconditions;
 

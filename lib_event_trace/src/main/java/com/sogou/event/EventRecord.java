@@ -4,7 +4,6 @@ import android.content.Context;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.support.v4.util.ArrayMap;
 import android.util.Log;
 
 import com.sogou.event.internal.EventParamProto;
@@ -21,6 +20,7 @@ import java.util.Set;
 import java.util.concurrent.locks.ReentrantLock;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.collection.ArrayMap;
 
 
 /**

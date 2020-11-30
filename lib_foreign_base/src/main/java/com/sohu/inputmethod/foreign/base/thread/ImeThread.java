@@ -3,7 +3,6 @@ package com.sohu.inputmethod.foreign.base.thread;
 import android.os.Looper;
 import android.text.TextUtils;
 
-
 import com.sohu.inputmethod.foreign.base.BuildConfig;
 import com.sohu.inputmethod.foreign.base.deadlock.SafeReentrantLock;
 

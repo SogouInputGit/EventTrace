@@ -1,13 +1,13 @@
 package com.sogou.event.operation;
 
-import android.support.v4.util.ArrayMap;
 import android.util.Pair;
+
+import androidx.collection.ArrayMap;
 
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
 

@@ -6,7 +6,8 @@ package com.sohu.inputmethod.foreign.base.language;
  * 键盘类型：字母，符号，数字
  */
 
-import android.support.annotation.IntDef;
+
+import androidx.annotation.IntDef;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

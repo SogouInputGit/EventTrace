@@ -1,8 +1,9 @@
 package com.sogou.event;
 
-import android.support.annotation.GuardedBy;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.GuardedBy;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

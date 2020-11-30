@@ -1,8 +1,9 @@
 package com.sohu.inputmethod.foreign.base.trace;
 
-import android.support.annotation.NonNull;
 import android.view.inputmethod.ExtractedText;
 import android.view.inputmethod.InputConnection;
+
+import androidx.annotation.NonNull;
 
 /**
  * @author feixuezheng on 2020/8/24

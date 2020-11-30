@@ -1,6 +1,6 @@
 package com.sogou.event.operation;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.sogou.event.internal.Preconditions;
 
@@ -25,7 +25,8 @@ public class EventOperationBean {
         return mClazz;
     }
 
-    public @NonNull IOperation getOperation() {
+    public @NonNull
+    IOperation getOperation() {
         if (mOperation == null) {
             Preconditions.throwCondition("EventOperationBean mOperation is null");
         }

@@ -1,6 +1,7 @@
 package com.sohu.inputmethod.foreign.base.language;
 
-import android.support.annotation.IntDef;
+
+import androidx.annotation.IntDef;
 
 /**
  * @author dongjianye on 2020-03-05

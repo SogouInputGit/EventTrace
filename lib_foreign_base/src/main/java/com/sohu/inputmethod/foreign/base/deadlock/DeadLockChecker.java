@@ -1,6 +1,7 @@
 package com.sohu.inputmethod.foreign.base.deadlock;
 
-import android.support.annotation.Nullable;
+
+import androidx.annotation.Nullable;
 
 import java.util.List;
 import java.util.Stack;

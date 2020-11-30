@@ -1,8 +1,9 @@
 package com.sogou.event.operation;
 
-import android.support.annotation.Nullable;
-import android.support.v4.util.ArrayMap;
 import android.util.Log;
+
+import androidx.annotation.Nullable;
+import androidx.collection.ArrayMap;
 
 import com.sogou.event.BuildConfig;
 import com.sogou.event.internal.Preconditions;
@@ -137,7 +138,8 @@ public class EventDefineFactory {
     }
 
     // BaseMomentaryOperation 瞬时值比较特殊，不走框架，不能走到这个函数里面
-    public static @Nullable EventOperationBean getCommandRecord(String id, String key) {
+    public static @Nullable
+    EventOperationBean getCommandRecord(String id, String key) {
         EventDefineFactory defineFactory = getInstance(id);
         defineFactory.init();
         final EventOperationBean record = defineFactory.mRecordDefines.get(key);

@@ -1,6 +1,6 @@
 # 概述
 
-搜狗pingback记录框架。
+基于Key-Value结构，事件记录框架。
 ## 特点：
 * 子线程记录事件
 * 底层记录采用mmkv
@@ -31,4 +31,5 @@
 * BaseGsonOperation
  * CustomGsonOperation
 * MmkvStorage
+
 

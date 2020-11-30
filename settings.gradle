@@ -1,4 +1,0 @@
-include ':app'
-include ':lib_event_trace'
-include ':lib_foreign_base'
-rootProject.name = "EventTraceDemo"
